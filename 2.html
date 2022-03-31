@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <main>
+    <head><title>first Html page</title></head>  
+      
+ <style>
+     .bgc{
+         background-color: black;
+     }
+ 
+     .bg-doge {
+  position: relative;
+  height: 600;
+
+  
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+}
+
+.bg-doge:before {
+  content: "";
+  background-image: url(lib.jpg);
+  position: fixed;
+  background-size:100% ;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.4;
+}
+	
+.logcol{
+	content: "";
+	background-color: black;
+	opacity: .50;
+	z-index: 1;
+	color: red;	
+
+}
+
+</style> 
+<marquee style="font-size:20px; color:rgb(43, 226, 98); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"behavior="scroll" direction="left">Welcome to the Library....Sign in to Continue</marquee>
+<center><h1 class="fonfam" style="color:white; font-size:50px ;">Library Management System</h1></center></body><br><br>
+<body class="bg-doge bgc">
+  <div class="logcol">  
+ <center></centre><h2 style="color:white;font-size:30px;opacity: 1;">Sign in</h2></center><br><br>
+ <form>
+ <label style="color:white;font-size:20px";><input  type="radio"name="Student" required>Student</label> 
+	 
+ <label style="color:white;font-size:20px";><input  type="radio"name="Student">Organisation</label><br><br>   
+ 
+<input style="font-size:20px" ;type="text" placeholder="Email"><br><br>
+<input style="font-size:20px"type="text" placeholder="Password"><br><br>
+</form>
+<button style="font-size:20px"onclick="location.href='3.html'">Login</button>
+</div>
+</body>
+</main> 
+
+    
